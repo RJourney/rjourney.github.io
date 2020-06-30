@@ -50,7 +50,13 @@
                 <ul class="current">
                     <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
     <ul class="current">
-    <li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a>
+    <li class="toctree-l2"><a class="reference internal" href="#mk-docs-guide">MK Docs Guide</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#my-experience">My Experience</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#organization-page">Organization Page</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project-page">Project Page</a>
     </li>
     <li class="toctree-l2"><a class="reference internal" href="#project-layout">Project layout</a>
     </li>
@@ -93,20 +99,36 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
+                <h1 id="welcome-to-my-r-learning">Welcome to my R Learning</h1>
+<h2 id="mk-docs-guide">MK Docs Guide</h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
 <li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
 <li><code>mkdocs build</code> - Build the documentation site.</li>
 <li><code>mkdocs -h</code> - Print help message and exit.</li>
+<li><code>mkdocs gh-deploy</code> -commit and push 
+cd ../orgname.github.io/
+mkdocs gh-deploy --config-file ../my-project/mkdocs.yml --remote-branch master</li>
+</ul>
+<h2 id="my-experience">My Experience</h2>
+<p>master branch and gh-pages branch issues will be addressed</p>
+<h2 id="organization-page">Organization Page</h2>
+<ul>
+<li>only runs from master branch</li>
+</ul>
+<h2 id="project-page">Project Page</h2>
+<ul>
+<li>runs from both master and gh-pages</li>
 </ul>
 <h2 id="project-layout">Project layout</h2>
 <pre><code>mkdocs.yml    # The configuration file.
 docs/
     index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
+    ***.md  # Other markdown pages, images and other files. 
+orgname.github.io #repository clone
+theme: readthedocs
+cd ../orgname.github.io/
+mkdocs gh-deploy --config-file ../my-project/mkdocs.yml    --remote-branch master
 </code></pre>
               
             </div>
@@ -161,5 +183,5 @@ docs/
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2020-06-30 16:56:10.080089+00:00
+Build Date UTC : 2020-06-30 17:05:08.595438+00:00
 -->
